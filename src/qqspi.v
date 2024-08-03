@@ -109,7 +109,7 @@ module qqspi #(
   always @(posedge clk) begin
     if (!resetn) begin
       ce <= ~0;
-      sclk <= 1'b0;
+      sclk <= 1'b1;
       sio_oe <= 4'b0000;
       sio_out <= 4'b0000;
       spi_buf <= 0;

@@ -12,7 +12,7 @@
 
 # PL_TARGET_DENSITY - You can increase this if Global Placement fails with error GPL-0302.
 # Users have reported that values up to 0.8 worked well for them.
-set ::env(PL_TARGET_DENSITY) 0.68
+set ::env(PL_TARGET_DENSITY) 0.4
 
 # CLOCK_PERIOD - Increase this in case you are getting setup time violations.
 # The value is in nanoseconds, so 20ns == 50MHz.
@@ -82,4 +82,4 @@ set ::env(RT_MAX_LAYER) {met4}
 
 # MAGIC_DEF_LABELS may cause issues with LVS
 set ::env(MAGIC_DEF_LABELS) 0
-set ::env(ROUTING_CORES) 32 
+set ::env(ROUTING_CORES) 32

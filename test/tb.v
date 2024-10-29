@@ -34,10 +34,6 @@ module tb ();
   wire [7:0] ui_in = {4'b0, uart_rx, spi_sio1_so_miso0, 2'b0};
   tt_um_kianv_bare_metal tt_um_kianv_bare_metal_I (
       // include power ports for the Gate Level test
-`ifdef GL_TEST
-      .VPWR   (1'b1),
-      .VGND   (1'b0),
-`endif
       .ui_in  (ui_in),    // Dedicated inputs
       .uo_out (uo_out),   // Dedicated outputs
       .uio_in (uio_in),   // IOs: Input path
